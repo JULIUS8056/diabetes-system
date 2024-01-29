@@ -31,7 +31,7 @@ decorator==5.1.1
 defusedxml==0.7.1
 distro==1.7.0
 distro-info
-duplicity==0.8.21
+duplicity
 et-xmlfile==1.0.1
 exceptiongroup==1.2.0
 executing==2.0.1
