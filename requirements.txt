@@ -1,5 +1,5 @@
-import streamlit
-import numpy
-import pickle
-from pyexpat import model
-from catboost import CatBoostClassifier
+streamlit
+numpy
+pickle
+pyexpat
+catboost
