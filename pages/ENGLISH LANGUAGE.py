@@ -1,3 +1,4 @@
+
 import numpy as np
 import pickle
 from catboost import CatBoostClassifier
@@ -16,19 +17,22 @@ def main():
 #title of the app
         st.title("Clinical Decision Support System for Prediction of Type 2 Diabetes".upper())
 #input setup
-    
-    fbs=st.text_input("Blood Sugar level ")
-    bmi=st.text_input("Body Mass Index")
-    waist=st.text_input("Waist Circumference")
-    age=st.text_input("Age")
-    gender=st.text_input("Gender","M/F ?")
-    fhd=st.text_input("Family History of Diabetes","Y/N ?")
-    fhh=st.text_input("Family History of Hypertension","Y/N ?")
-    heu=st.text_input("History of Excess Urine","Y/N ?")
-    hew=st.text_input("History of Excess Water Intake","Y/N ?")
-    rex=st.text_input("Did you do excercise regularly","Y/N ?")
-    hef=st.text_input("History of Excess Food Intake","Y/N ?")
-    phd=st.text_input("Did you have other type of diabetes before","Y/N ?")
+    fbs=st.number_input("Blood Sugar level ", value=12,min_value=10)
+    weight=st.number_input("Wight (kg)", value=15, min_value=10)
+    height=st.number_input("Height (cm)",value=15, min_value=10)
+    bmi=(weight/(height*height))*10000
+    #st.write(f'Atọka Ibi Ara (BMI): {'{:.2f}'.format(bmi)}')
+    st.write(f'BMI: {"{:.1f}".format(bmi)}')
+    waist=st.number_input("Waist Circumference",value=15, min_value=10)
+    age=st.number_input("Age", value=15, min_value=10)
+    gender=st.selectbox("Gender",["M","F "])
+    fhd=st.selectbox("Family History of Diabetes",["Y","N "])
+    fhh=st.selectbox("Family History of Hypertension",["Y","N "])
+    heu=st.selectbox("History of Excess Urine",["Y","N "])
+    hew=st.selectbox("History of Excess Water Intake",["Y","N "])
+    rex=st.selectbox("Did you do excercise regularly",["Y","N "])
+    hef=st.selectbox("History of Excess Food Intake",["Y","N "])
+    phd=st.selectbox("Did you have other type of diabetes before",["Y","N "])
 #action button
     makeprediction=[]
     if st.button("Predict"):
@@ -37,7 +41,7 @@ def main():
         if makeprediction == 'Y':
             st.success("You either have diabetes or are likely to have it. Please visit the doctor as soon as possible.".upper())  
         else:
-                st.success('You do not have Diabetes'.upper())
+                st.success('You do not have Diabetes!'.upper()+' Ensure you eat balance diet and do regular excercise.')
         #st.success(result)
 #display of result
     #st.success("Your result shows that you {}".format(makeprediction))

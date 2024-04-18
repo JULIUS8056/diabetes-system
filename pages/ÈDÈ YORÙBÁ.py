@@ -17,12 +17,15 @@ def main():
     rex=''
     hef=''
     phd=''
-    fbs=st.number_input("Iwọn suga ninu ẹjẹ (Blood sugar)".upper())    
-    bmiy=st.number_input("Atọka Ibi Ara (BMI)".upper())
-    bmi=bmiy
-    waisty=st.number_input("Ayika ẹgbẹ-ikun".upper())
+    fbs=st.number_input("Iwọn suga ninu ẹjẹ (Blood sugar)".upper(),value=15, min_value=10)
+    weight=st.number_input("Iwọn (kg)", value=15, min_value=10)
+    height=st.number_input("Giga (cm)",value=15, min_value=10)
+    bmi=(weight/(height*height))*10000
+
+    st.write(f'Atọka Ibi Ara (BMI): {"{:.1f}".format(bmi)}')
+    waisty=st.number_input("Ayika ẹgbẹ-ikun".upper(),value=15, min_value=10)
     waist=waisty
-    agey=st.number_input("Ọjọ ori".upper())
+    agey=st.number_input("Ọjọ ori".upper(),value=15, min_value=10)
     age=agey
     gendery=st.selectbox("iwa (ọkunrin tabi obinrin?)".upper(),("ọkunrin","obinrin"))
     if(gendery=="ọkunrin"):
@@ -66,7 +69,7 @@ def main():
     else:
       phd='N' 
     makeprediction=[]
-    if st.button("Predict"): 
+    if st.button("Ṣayẹwo"): 
         makeprediction=model.predict(
           [[fbs,bmi,waist,age,gender,fhd,fhh,heu,hew,rex,hef,phd]]
           )
