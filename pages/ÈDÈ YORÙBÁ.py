@@ -17,7 +17,14 @@ def main():
     rex=''
     hef=''
     phd=''
-    fbs=st.number_input("Iwọn suga ninu ẹjẹ (Fasting Blood sugar)".upper(),value=15, min_value=10)
+blood=st.selectbox("Yan ipin kan fun ipele suga ninu ẹjẹ", ["mmol/L", "mg/dL"])
+    if(blood=="mmol/L"):
+        bsl=st.number_input("Ipele suga ninu ẹjẹ mmol/L")
+        fbs=bsl*18.0182
+    else:
+        fbs=st.number_input("Ipele suga ninu ẹjẹ mg/dL", value=12,min_value=10)
+    
+    #fbs=st.number_input("Iwọn suga ninu ẹjẹ (Fasting Blood sugar)".upper(),value=15, min_value=10)
     weight=st.number_input("Iwọn (kg)", value=15, min_value=10)
     height=st.number_input("Giga (cm)",value=15, min_value=10)
     bmi=(weight/(height*height))*10000
