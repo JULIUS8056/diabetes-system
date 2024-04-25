@@ -17,7 +17,7 @@ def main():
     rex=''
     hef=''
     phd=''
-    fbs=st.number_input("Iwọn suga ninu ẹjẹ (Blood sugar)".upper(),value=15, min_value=10)
+    fbs=st.number_input("Iwọn suga ninu ẹjẹ (Fasting Blood sugar)".upper(),value=15, min_value=10)
     weight=st.number_input("Iwọn (kg)", value=15, min_value=10)
     height=st.number_input("Giga (cm)",value=15, min_value=10)
     bmi=(weight/(height*height))*10000
