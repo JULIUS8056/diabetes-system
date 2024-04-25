@@ -5,7 +5,7 @@ import pickle
 from catboost import CatBoostClassifier
 import streamlit as st
 
-model=pickle.load(open('/home/julius/python folder/Type-2-prediction.pkl','rb'))
+model=pickle.load(open('Type-2-prediction.pkl','rb'))
 #global makeprediction
 with open("design.css") as ds:
     st.markdown(f"<style>{ds.read()}</style>", unsafe_allow_html=True)
