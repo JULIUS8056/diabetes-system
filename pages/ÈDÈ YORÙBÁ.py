@@ -29,7 +29,7 @@ def main():
     height=st.number_input("Giga (cm)",value=15, min_value=10)
     bmi=(weight/(height*height))*10000
 
-    st.write(f'Atọka Ibi Ara (BMI): {"{:.1f}".format(bmi)}')
+    #st.write(f'Atọka Ibi Ara (BMI): {"{:.1f}".format(bmi)}')
     waisty=st.number_input("Ayika ẹgbẹ-ikun".upper(),value=15, min_value=10)
     waist=waisty
     agey=st.number_input("Ọjọ ori".upper(),value=15, min_value=10)
