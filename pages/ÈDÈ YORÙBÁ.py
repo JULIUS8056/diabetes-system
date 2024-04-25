@@ -4,7 +4,7 @@ import pickle
 from catboost import CatBoostClassifier
 import streamlit as st
 st.title(" Ẹrọ Ayẹwo fun Aisan ito suga iru Keji".upper())
-model=pickle.load(open('/home/julius/python folder/Type-2-prediction.pkl','rb'))
+model=pickle.load(open('Type-2-prediction.pkl','rb'))
 with open("design.css") as ds:
     st.markdown(f"<style>{ds.read()}</style>", unsafe_allow_html=True)
 def main():
