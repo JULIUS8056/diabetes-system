@@ -84,7 +84,7 @@ def main():
         else:
             st.success("O ko ni AISAN ITO SUGA, ṣugbọn rii daju pe o jẹ ounjẹ iwontunwonsi".upper())
         bmif="{:.2f}".format(bmi)
-        st.caption(":blue[Itumọ ti Atọka Ibi Ara Rẹ(BMI)]")
+        st.title(":blue[Itumọ ti Atọka Ibi Ara Rẹ(BMI)]")
         if(bmi<=18.5):
             st.success("O ni iwuwo kekere pẹlu BMI ti "+str(bmif)+". Rii daju pe o se ere idaraya ati pe onjẹ ounjẹ iwọntunwọnsi")
         elif(18.5 < bmi <= 24.9):
