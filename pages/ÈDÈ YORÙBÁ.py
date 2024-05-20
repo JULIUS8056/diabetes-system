@@ -94,7 +94,7 @@ def main():
         elif(30< bmi <= 34.9):
             st.success("O ti sanra pẹlu BMI ti "+str(bmif)+"kg/m^2. O wa ninu eewu nla ti awọn arun bii Àtọgbẹ, Ẹjẹ ruru, ati bẹbẹ lọ.")
         else:
-            st.success("You have severe Obesity with BMI of "+str(bmif)+"kg/m^2. Kindly visit a medical Doctor as soon as possible")
+            st.success("O ni isanraju pẹlu BMI ti"+str(bmif)+"kg/m^2. Jọwọ ṣabẹwo si dokita Onisegun Oyinbo ni kiakia")
         image1=Image.open('bmib.png')
         st.image(image1, width=500)
 if __name__=='__main__':
