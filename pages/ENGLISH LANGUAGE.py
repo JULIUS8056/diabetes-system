@@ -50,7 +50,8 @@ def main():
                 st.success('The result shows that you do not have Type 2 Diabetes!'+' Ensure you eat balance diet and do regular excercise.')
         #st.success(result)
 #display of result
-    #st.success("Your result shows that you {}".format(makeprediction))
+        
+        st.success("Interpretation of your Body Mass Index (BMI) {}".format(makeprediction))
         bmif="{:.2f}".format(bmi)
         st.title(":blue[Interpretation of your Body Mass Index (BMI)]")
         if(bmi<=18.5):
