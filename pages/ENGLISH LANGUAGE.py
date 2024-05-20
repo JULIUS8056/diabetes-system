@@ -52,7 +52,7 @@ def main():
 #display of result
     #st.success("Your result shows that you {}".format(makeprediction))
         bmif="{:.2f}".format(bmi)
-        st.caption(":blue[Interpretation of your weight]")
+        st.title(":blue[Interpretation of your Body Mass Index (BMI)]")
         if(bmi<=18.5):
             st.success("You are underweight with BMI of "+str(bmif)+". Ensure you well and eat balance diet")
         elif(18.5 < bmi <= 24.9):
