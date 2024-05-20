@@ -51,7 +51,6 @@ def main():
         #st.success(result)
 #display of result
         
-        #st.success("Interpretation of your Body Mass Index (BMI) {}".format(makeprediction))
         bmif="{:.2f}".format(bmi)
         st.title(":blue[Interpretation of your Body Mass Index (BMI)]")
         if(bmi<=18.5):
