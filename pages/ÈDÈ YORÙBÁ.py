@@ -84,15 +84,15 @@ def main():
         else:
             st.success("O ko ni AISAN ITO SUGA, ṣugbọn rii daju pe o jẹ ounjẹ iwontunwonsi".upper())
         bmif="{:.2f}".format(bmi)
-        st.caption(":blue[Interpretation of your weight]")
+        st.caption(":blue[Itumọ ti Atọka Ibi Ara Rẹ(BMI)]")
         if(bmi<=18.5):
-            st.success("You are underweight with BMI of "+str(bmif)+". Ensure you well and eat balance diet")
+            st.success("O ni iwuwo kekere pẹlu BMI ti "+str(bmif)+". Rii daju pe o se ere idaraya ati pe onjẹ ounjẹ iwọntunwọnsi")
         elif(18.5 < bmi <= 24.9):
-            st.success("Your weight is normal with BMI of "+str(bmif)+"kg/m^2. Maintain your eating and Excercise habits")
+            st.success("Atọka ibi-ara rẹ jẹ deede pẹlu BMI ti "+str(bmif)+"kg/m^2. Tẹsiwaju lati jẹun daradara ati Ere Idaraya nigbagbogbo")
         elif(25 < bmi <= 29.29):
-            st.success("You are overweight with BMI of "+str(bmif)+"kg/m^2. Improve on your Excercise")
+            st.success("O ni iwọn apọju pẹlu BMI ti "+str(bmif)+"kg/m^2. Rii daju pe o se ere idaraya nigbagbogbo")
         elif(30< bmi <= 34.9):
-            st.success("You are obese with BMI of "+str(bmif)+"kg/m^2. You are at high risk of diseases like Diabees, Hypertension, etc. Reduce you food intake and do more excercise")
+            st.success("O ti sanra pẹlu BMI ti "+str(bmif)+"kg/m^2. O wa ninu eewu nla ti awọn arun bii Àtọgbẹ, Ẹjẹ ruru, ati bẹbẹ lọ.")
         else:
             st.success("You have severe Obesity with BMI of "+str(bmif)+"kg/m^2. Kindly visit a medical Doctor as soon as possible")
         image1=Image.open('bmib.png')
