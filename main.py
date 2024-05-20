@@ -1,5 +1,5 @@
 import streamlit as st
-st.title("WELCOME TO TYPE-2-DIABETES PREDICTION SYSTEM")
+#st.title("WELCOME TO TYPE-2-DIABETES PREDICTION SYSTEM")
 #def cred_entered():
  #    if st.session_state["usern"].strip()=="admin" and st.session_state["psword"].strip()=="julius":
   #      st.session_state["authenticated"]=True
@@ -19,7 +19,6 @@ st.title("WELCOME TO TYPE-2-DIABETES PREDICTION SYSTEM")
         #   username=st.text_input("Enter your Username", key="usern", on_change=cred_entered)
          #  password=st.text_input("Enter your Password", type='password', key="psword", on_change=cred_entered)
           # return False
-
 st.set_page_config(
 page_title="Multiple App",
 layout="wide"
