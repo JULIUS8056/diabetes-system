@@ -87,19 +87,19 @@ def main():
     else:
                 st.success("O ko ni AISAN ITO SUGA, ṣugbọn rii daju pe o jẹ ounjẹ iwontunwonsi".upper())
 
-            bmif="{:.2f}".format(bmi)
-            st.caption(":blue[Interpretation of your weight]")
-            if(bmi<=18.5):
-                st.success("You are underweight with BMI of "+str(bmif)+". Ensure you well and eat balance diet")
-            elif(18.5 < bmi <= 24.9):
-                st.success("Your weight is normal with BMI of "+str(bmif)+"kg/m^2. Maintain your eating and Excercise habits")
-            elif(25 < bmi <= 29.29):
-                st.success("You are overweight with BMI of "+str(bmif)+"kg/m^2. Improve on your Excercise")
-            elif(30< bmi <= 34.9):
-                st.success("You are obese with BMI of "+str(bmif)+"kg/m^2. You are at high risk of diseases like Diabees, Hypertension, etc. Reduce you food intake and do more excercise")
-            else:
-                st.success("You have severe Obesity with BMI of "+str(bmif)+"kg/m^2. Kindly visit a medical Doctor as soon as possible")
-            image1=Image.open('bmib.png')
-            st.image(image1, width=500)
+    bmif="{:.2f}".format(bmi)
+    st.caption(":blue[Interpretation of your weight]")
+    if(bmi<=18.5):
+        st.success("You are underweight with BMI of "+str(bmif)+". Ensure you well and eat balance diet")
+    elif(18.5 < bmi <= 24.9):
+        st.success("Your weight is normal with BMI of "+str(bmif)+"kg/m^2. Maintain your eating and Excercise habits")
+    elif(25 < bmi <= 29.29):
+        st.success("You are overweight with BMI of "+str(bmif)+"kg/m^2. Improve on your Excercise")
+    elif(30< bmi <= 34.9):
+        st.success("You are obese with BMI of "+str(bmif)+"kg/m^2. You are at high risk of diseases like Diabees, Hypertension, etc. Reduce you food intake and do more excercise")
+    else:
+        st.success("You have severe Obesity with BMI of "+str(bmif)+"kg/m^2. Kindly visit a medical Doctor as soon as possible")
+    image1=Image.open('bmib.png')
+    st.image(image1, width=500)
 if __name__=='__main__':
   main()
