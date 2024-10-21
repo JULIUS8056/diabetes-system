@@ -83,19 +83,19 @@ def main():
             st.success("AISAN ITO SUGA WA LARA RE, YARA LO RI DOKITA ONISEGUN OYINBO NI KIAKIA".upper())
         else:
             st.success("O ko ni AISAN ITO SUGA, ṣugbọn rii daju pe o jẹ ounjẹ iwontunwonsi".upper())
-        bmif="{:.2f}".format(bmi)
-        st.title(":blue[Itumọ ti Atọka Ibi Ara Rẹ(BMI)]")
-        if(bmi<=18.5):
-            st.success("O ni iwuwo kekere pẹlu BMI ti "+str(bmif)+". Rii daju pe o se ere idaraya ati pe onjẹ ounjẹ iwọntunwọnsi")
-        elif(18.5 < bmi <= 24.9):
-            st.success("Atọka ibi-ara rẹ jẹ deede pẹlu BMI ti "+str(bmif)+"kg/m^2. Tẹsiwaju lati jẹun daradara ati Ere Idaraya nigbagbogbo")
-        elif(25 < bmi <= 29.29):
-            st.success("O ni iwọn apọju pẹlu BMI ti "+str(bmif)+"kg/m^2. Rii daju pe o se ere idaraya nigbagbogbo")
-        elif(30< bmi <= 34.9):
-            st.success("O ti sanra pẹlu BMI ti "+str(bmif)+"kg/m^2. O wa ninu eewu nla ti awọn arun bii Àtọgbẹ, Ẹjẹ ruru, ati bẹbẹ lọ.")
-        else:
-            st.success("O ni isanraju pẹlu BMI ti "+str(bmif)+"kg/m^2. Jọwọ ṣabẹwo si dokita Onisegun Oyinbo ni kiakia")
-        image1=Image.open('bmib.png')
-        st.image(image1, width=500)
+        #bmif="{:.2f}".format(bmi)
+        #st.title(":blue[Itumọ ti Atọka Ibi Ara Rẹ(BMI)]")
+        #if(bmi<=18.5):
+         #   st.success("O ni iwuwo kekere pẹlu BMI ti "+str(bmif)+". Rii daju pe o se ere idaraya ati pe onjẹ ounjẹ iwọntunwọnsi")
+        #elif(18.5 < bmi <= 24.9):
+         #   st.success("Atọka ibi-ara rẹ jẹ deede pẹlu BMI ti "+str(bmif)+"kg/m^2. Tẹsiwaju lati jẹun daradara ati Ere Idaraya nigbagbogbo")
+        #elif(25 < bmi <= 29.29):
+         #   st.success("O ni iwọn apọju pẹlu BMI ti "+str(bmif)+"kg/m^2. Rii daju pe o se ere idaraya nigbagbogbo")
+        #elif(30< bmi <= 34.9):
+         #   st.success("O ti sanra pẹlu BMI ti "+str(bmif)+"kg/m^2. O wa ninu eewu nla ti awọn arun bii Àtọgbẹ, Ẹjẹ ruru, ati bẹbẹ lọ.")
+        #else:
+         #   st.success("O ni isanraju pẹlu BMI ti "+str(bmif)+"kg/m^2. Jọwọ ṣabẹwo si dokita Onisegun Oyinbo ni kiakia")
+        #image1=Image.open('bmib.png')
+       # st.image(image1, width=500)
 if __name__=='__main__':
   main()
